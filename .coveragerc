@@ -1,8 +1,8 @@
 [run]
-source = fastapi_open_endpoint
+source = fastapi_example_cases
 
 [report]
 omit =
     */python?.?/*
     */site-packages/nose/*
-    fastapi_open_endpoint/__main__.py
+    fastapi_example_cases/__main__.py

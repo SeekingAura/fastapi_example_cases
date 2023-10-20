@@ -23,18 +23,18 @@ def read(*paths, **kwargs):
 
 
 description = """
-fastapi_open_endpoint API helps you do awesome stuff. 🚀
+fastapi_example_cases API helps you do awesome stuff. 🚀
 """
 
 app = FastAPI(
-    title="fastapi_open_endpoint",
+    title="fastapi_example_cases",
     description=description,
     version=read("VERSION"),
-    terms_of_service="http://fastapi_open_endpoint.com/terms/",
+    terms_of_service="http://fastapi_example_cases.com/terms/",
     contact={
         "name": "SeekingAura",
-        "url": "http://fastapi_open_endpoint.com/contact/",
-        "email": "SeekingAura@fastapi_open_endpoint.com",
+        "url": "http://fastapi_example_cases.com/contact/",
+        "email": "SeekingAura@fastapi_example_cases.com",
     },
     license_info={
         "name": "The Unlicense",

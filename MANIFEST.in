@@ -2,4 +2,4 @@ include LICENSE
 include HISTORY.md
 include Containerfile
 graft tests
-graft fastapi_open_endpoint
+graft fastapi_example_cases

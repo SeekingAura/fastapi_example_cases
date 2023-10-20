@@ -1,6 +1,6 @@
 # How to develop on this project
 
-fastapi_open_endpoint welcomes contributions from the community.
+fastapi_example_cases welcomes contributions from the community.
 
 **You need PYTHON3!**
 
@@ -8,9 +8,9 @@ This instructions are for linux base systems. (Linux, MacOS, BSD, etc.)
 ## Setting up your own fork of this repo.
 
 - On github interface click on `Fork` button.
-- Clone your fork of this repo. `git clone git@github.com:YOUR_GIT_USERNAME/fastapi_open_endpoint.git`
-- Enter the directory `cd fastapi_open_endpoint`
-- Add upstream repo `git remote add upstream https://github.com/SeekingAura/fastapi_open_endpoint`
+- Clone your fork of this repo. `git clone git@github.com:YOUR_GIT_USERNAME/fastapi_example_cases.git`
+- Enter the directory `cd fastapi_example_cases`
+- Add upstream repo `git remote add upstream https://github.com/SeekingAura/fastapi_example_cases`
 
 ## Setting up your own virtual environment
 

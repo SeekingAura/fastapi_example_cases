@@ -1,99 +1,48 @@
-# FastAPI Project Template
+# fastapi_example_cases
 
-The base to start an openapi project featuring: SQLModel, Typer, FastAPI, JWT Token Auth, Interactive Shell, Management Commands. 
+[![codecov](https://codecov.io/gh/SeekingAura/fastapi_example_cases/branch/main/graph/badge.svg?token=fastapi_example_cases_token_here)](https://codecov.io/gh/SeekingAura/fastapi_example_cases)
+[![CI](https://github.com/SeekingAura/fastapi_example_cases/actions/workflows/main.yml/badge.svg)](https://github.com/SeekingAura/fastapi_example_cases/actions/workflows/main.yml)
 
-See also
-
--  [Python-Project-Template](https://github.com/rochacbruno/python-project-template/) for a lean, low dependency Python app.
--  [Flask-Project-Template](https://github.com/rochacbruno/flask-project-template/) for a full feature Flask project including database, API, admin interface, etc.
-
-
-### HOW TO USE THIS TEMPLATE
-
-> **DO NOT FORK** this is meant to be used from **[Use this template](https://github.com/rochacbruno/fastapi-project-template/generate)** feature.
-
-1. Click on **[Use this template](https://github.com/rochacbruno/fastapi-project-template/generate)**
-3. Give a name to your project  
-   (e.g. `my_awesome_project` recommendation is to use all lowercase and underscores separation for repo names.)
-3. Wait until the first run of CI finishes  
-   (Github Actions will process the template and commit to your new repo)
-4. If you want [codecov](https://about.codecov.io/sign-up/) Reports and Automatic Release to [PyPI](https://pypi.org)  
-  On the new repository `settings->secrets` add your `PIPY_API_TOKEN` and `CODECOV_TOKEN` (get the tokens on respective websites)
-4. Read the file [CONTRIBUTING.md](CONTRIBUTING.md)
-5. Then clone your new project and happy coding!
-
-> **NOTE**: **WAIT** until first CI run on github actions before cloning your new project.
-
-### What is included on this template?
-
-- 🖼️ The base to start an openapi project featuring: SQLModel, Typer, FastAPI, VueJS.
-- 📦 A basic [setup.py](setup.py) file to provide installation, packaging and distribution for your project.  
-  Template uses setuptools because it's the de-facto standard for Python packages, you can run `make switch-to-poetry` later if you want.
-- 🤖 A [Makefile](Makefile) with the most useful commands to install, test, lint, format and release your project.
-- 📃 Documentation structure using [mkdocs](http://www.mkdocs.org)
-- 💬 Auto generation of change log using **gitchangelog** to keep a HISTORY.md file automatically based on your commit history on every release.
-- 🐋 A simple [Containerfile](Containerfile) to build a container image for your project.  
-  `Containerfile` is a more open standard for building container images than Dockerfile, you can use buildah or docker with this file.
-- 🧪 Testing structure using [pytest](https://docs.pytest.org/en/latest/)
-- ✅ Code linting using [flake8](https://flake8.pycqa.org/en/latest/)
-- 📊 Code coverage reports using [codecov](https://about.codecov.io/sign-up/)
-- 🛳️ Automatic release to [PyPI](https://pypi.org) using [twine](https://twine.readthedocs.io/en/latest/) and github actions.
-- 🎯 Entry points to execute your program using `python -m <fastapi_open_endpoint>` or `$ fastapi_open_endpoint` with basic CLI argument parsing.
-- 🔄 Continuous integration using [Github Actions](.github/workflows/) with jobs to lint, test and release your project on Linux, Mac and Windows environments.
-
-> Curious about architectural decisions on this template? read [ABOUT_THIS_TEMPLATE.md](ABOUT_THIS_TEMPLATE.md)  
-> If you want to contribute to this template please open an [issue](https://github.com/rochacbruno/fastapi-project-template/issues) or fork and send a PULL REQUEST.
-
-[❤️ Sponsor this project](https://github.com/sponsors/rochacbruno/)
-
-<!--  DELETE THE LINES ABOVE THIS AND WRITE YOUR PROJECT README BELOW -->
-
----
-# fastapi_open_endpoint
-
-[![codecov](https://codecov.io/gh/SeekingAura/fastapi_open_endpoint/branch/main/graph/badge.svg?token=fastapi_open_endpoint_token_here)](https://codecov.io/gh/SeekingAura/fastapi_open_endpoint)
-[![CI](https://github.com/SeekingAura/fastapi_open_endpoint/actions/workflows/main.yml/badge.svg)](https://github.com/SeekingAura/fastapi_open_endpoint/actions/workflows/main.yml)
-
-Awesome fastapi_open_endpoint created by SeekingAura
+fastapi_example_cases Is a project where have some example cases, this project is for test purposes only
 
 ## Install
 
 from source
 ```bash
-git clone https://github.com/SeekingAura/fastapi_open_endpoint fastapi_open_endpoint
-cd fastapi_open_endpoint
+git clone https://github.com/SeekingAura/fastapi_example_cases fastapi_example_cases
+cd fastapi_example_cases
 make install
 ```
 
 from pypi
 
 ```bash
-pip install fastapi_open_endpoint
+pip install fastapi_example_cases
 ```
 
 ## Executing
 
 ```bash
-$ fastapi_open_endpoint run --port 8080
+$ fastapi_example_cases run --port 8080
 ```
 
 or
 
 ```bash
-python -m fastapi_open_endpoint run --port 8080
+python -m fastapi_example_cases run --port 8080
 ```
 
 or
 
 ```bash
-$ uvicorn fastapi_open_endpoint:app
+$ uvicorn fastapi_example_cases:app
 ```
 
 ## CLI
 
 ```bash
-❯ fastapi_open_endpoint --help
-Usage: fastapi_open_endpoint [OPTIONS] COMMAND [ARGS]...
+❯ fastapi_example_cases --help
+Usage: fastapi_example_cases [OPTIONS] COMMAND [ARGS]...
 
 Options:
   --install-completion [bash|zsh|fish|powershell|pwsh]
@@ -112,8 +61,8 @@ Commands:
 ### Creating a user
 
 ```bash
-❯ fastapi_open_endpoint create-user --help
-Usage: fastapi_open_endpoint create-user [OPTIONS] USERNAME PASSWORD
+❯ fastapi_example_cases create-user --help
+Usage: fastapi_example_cases create-user [OPTIONS] USERNAME PASSWORD
 
   Create user
 
@@ -129,7 +78,7 @@ Options:
 **IMPORTANT** To create an admin user on the first run:
 
 ```bash
-fastapi_open_endpoint create-user admin admin --superuser
+fastapi_example_cases create-user admin admin --superuser
 ```
 
 ### The Shell
@@ -137,7 +86,7 @@ fastapi_open_endpoint create-user admin admin --superuser
 You can enter an interactive shell with all the objects imported.
 
 ```bash
-❯ fastapi_open_endpoint shell       
+❯ fastapi_example_cases shell       
 Auto imports: ['app', 'settings', 'User', 'engine', 'cli', 'create_user', 'select', 'session', 'Content']
 
 In [1]: session.query(Content).all()
@@ -151,12 +100,12 @@ Out[3]: [Content(text='string', title='string', created_time='2021-09-14T19:25:0
 
 ## API
 
-Run with `fastapi_open_endpoint run` and access http://127.0.0.1:8000/docs
+Run with `fastapi_example_cases run` and access http://127.0.0.1:8000/docs
 
 ![](https://raw.githubusercontent.com/rochacbruno/fastapi-project-template/master/docs/api.png)
 
 
-**For some api calls you must authenticate** using the user created with `fastapi_open_endpoint create-user`.
+**For some api calls you must authenticate** using the user created with `fastapi_example_cases create-user`.
 
 ## Testing
 
@@ -189,18 +138,18 @@ tests/test_user_api.py::test_user_create PASSED                           [100%]
 ----------- coverage: platform linux, python 3.9.6-final-0 -----------
 Name                              Stmts   Miss  Cover
 -----------------------------------------------------
-fastapi_open_endpoint/__init__.py              4      0   100%
-fastapi_open_endpoint/app.py                  16      1    94%
-fastapi_open_endpoint/cli.py                  21      0   100%
-fastapi_open_endpoint/config.py                5      0   100%
-fastapi_open_endpoint/db.py                   10      0   100%
-fastapi_open_endpoint/models/__init__.py       0      0   100%
-fastapi_open_endpoint/models/content.py       47      1    98%
-fastapi_open_endpoint/routes/__init__.py      11      0   100%
-fastapi_open_endpoint/routes/content.py       52     25    52%
-fastapi_open_endpoint/routes/security.py      15      1    93%
-fastapi_open_endpoint/routes/user.py          52     26    50%
-fastapi_open_endpoint/security.py            103     12    88%
+fastapi_example_cases/__init__.py              4      0   100%
+fastapi_example_cases/app.py                  16      1    94%
+fastapi_example_cases/cli.py                  21      0   100%
+fastapi_example_cases/config.py                5      0   100%
+fastapi_example_cases/db.py                   10      0   100%
+fastapi_example_cases/models/__init__.py       0      0   100%
+fastapi_example_cases/models/content.py       47      1    98%
+fastapi_example_cases/routes/__init__.py      11      0   100%
+fastapi_example_cases/routes/content.py       52     25    52%
+fastapi_example_cases/routes/security.py      15      1    93%
+fastapi_example_cases/routes/user.py          52     26    50%
+fastapi_example_cases/security.py            103     12    88%
 -----------------------------------------------------
 TOTAL                               336     66    80%
 
@@ -222,7 +171,7 @@ make fmt   # formats the code
 This project uses [Dynaconf](https://dynaconf.com) to manage configuration.
 
 ```py
-from fastapi_open_endpoint.config import settings
+from fastapi_example_cases.config import settings
 ```
 
 ## Acessing variables
@@ -251,14 +200,14 @@ dynaconf_merge = true
 echo = true
 ```
 
-> `dynaconf_merge` is a boolean that tells if the settings should be merged with the default settings defined in fastapi_open_endpoint/default.toml.
+> `dynaconf_merge` is a boolean that tells if the settings should be merged with the default settings defined in fastapi_example_cases/default.toml.
 
 ### As environment variables
 ```bash
-export fastapi_open_endpoint_KEY=value
-export fastapi_open_endpoint_KEY="@int 42"
-export fastapi_open_endpoint_KEY="@jinja {{ this.db.uri }}"
-export fastapi_open_endpoint_DB__uri="@jinja {{ this.db.uri | replace('db', 'data') }}"
+export fastapi_example_cases_KEY=value
+export fastapi_example_cases_KEY="@int 42"
+export fastapi_example_cases_KEY="@jinja {{ this.db.uri }}"
+export fastapi_example_cases_DB__uri="@jinja {{ this.db.uri | replace('db', 'data') }}"
 ```
 
 ### Secrets
@@ -272,7 +221,7 @@ can read those variables.
 ### Switching environments
 
 ```bash
-fastapi_open_endpoint_ENV=production fastapi_open_endpoint run
+fastapi_example_cases_ENV=production fastapi_example_cases run
 ```
 
 Read more on https://dynaconf.com

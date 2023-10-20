@@ -7,9 +7,9 @@ from sqlalchemy.exc import IntegrityError
 
 # This next line ensures tests uses its own database and settings environment
 os.environ["FORCE_ENV_FOR_DYNACONF"] = "testing"  # noqa
-# WARNING: Ensure imports from `fastapi_open_endpoint` comes after this line
-from fastapi_open_endpoint import app, settings, db  # noqa
-from fastapi_open_endpoint.cli import create_user, cli  # noqa
+# WARNING: Ensure imports from `fastapi_example_cases` comes after this line
+from fastapi_example_cases import app, settings, db  # noqa
+from fastapi_example_cases.cli import create_user, cli  # noqa
 
 
 # each test runs on cwd to its temp dir

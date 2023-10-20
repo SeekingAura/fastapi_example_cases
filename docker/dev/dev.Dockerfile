@@ -33,4 +33,4 @@ RUN chown -R app:app $APP_HOME
 
 USER app
 
-CMD ["uvicorn", "fastapi_open_endpoint.app:app", "--host=0.0.0.0","--port=8000","--reload"]
+CMD ["uvicorn", "fastapi_example_cases.app:app", "--host=0.0.0.0","--port=8000","--reload"]

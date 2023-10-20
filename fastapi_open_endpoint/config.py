@@ -5,11 +5,11 @@ from dynaconf import Dynaconf
 HERE = os.path.dirname(os.path.abspath(__file__))
 
 settings = Dynaconf(
-    envvar_prefix="fastapi_open_endpoint",
+    envvar_prefix="fastapi_example_cases",
     preload=[os.path.join(HERE, "default.toml")],
     settings_files=["settings.toml", ".secrets.toml"],
     environments=["development", "production", "testing"],
-    env_switcher="fastapi_open_endpoint_env",
+    env_switcher="fastapi_example_cases_env",
     load_dotenv=False,
 )
 
@@ -18,7 +18,7 @@ settings = Dynaconf(
 # How to use this application settings
 
 ```
-from fastapi_open_endpoint.config import settings
+from fastapi_example_cases.config import settings
 ```
 
 ## Acessing variables
@@ -45,15 +45,15 @@ KEY=value
 
 ### As environment variables
 ```
-export fastapi_open_endpoint_KEY=value
-export fastapi_open_endpoint_KEY="@int 42"
-export fastapi_open_endpoint_KEY="@jinja {{ this.db.uri }}"
-export fastapi_open_endpoint_DB__uri="@jinja {{ this.db.uri | replace('db', 'data') }}"
+export fastapi_example_cases_KEY=value
+export fastapi_example_cases_KEY="@int 42"
+export fastapi_example_cases_KEY="@jinja {{ this.db.uri }}"
+export fastapi_example_cases_DB__uri="@jinja {{ this.db.uri | replace('db', 'data') }}"
 ```
 
 ### Switching environments
 ```
-fastapi_open_endpoint_ENV=production fastapi_open_endpoint run
+fastapi_example_cases_ENV=production fastapi_example_cases run
 ```
 
 Read more on https://dynaconf.com

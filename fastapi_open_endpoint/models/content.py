@@ -5,7 +5,7 @@ from pydantic import BaseModel, Extra
 from sqlmodel import Field, Relationship, SQLModel
 
 if TYPE_CHECKING:
-    from fastapi_open_endpoint.security import User
+    from fastapi_example_cases.security import User
 
 
 class Content(SQLModel, table=True):
